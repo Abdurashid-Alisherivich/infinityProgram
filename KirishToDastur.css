@@ -1,0 +1,112 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url('./fonts/PTMono-Regular.ttf');
+  }
+
+.firtSectionImagLogo
+{
+    margin-left: -12px;
+    width: 100%;
+    height: 100vh;
+    background-color: orange;
+}
+.firtSectionImagLogo1
+{
+    margin-left: 10%;
+    margin-top: 45% !important;
+}
+
+.firtSectionImagLogo1 h1 
+{
+    font-size: 40px;
+    display: inline-block;
+    justify-content: center;
+}
+.sizeForLogoInfinity
+{
+    margin-left: -15%;
+    border-right: 2px solid black;
+}
+.sizeForLogoInfinity img
+{
+    margin-left: -15%;
+    width: 100%;
+    height: 30px;
+}
+.fontsForInfinity
+{
+    margin-left: 5%;
+    color:  #2E2929;
+    font-family: myFirstFont;
+
+}
+.row
+{
+    height: 100vh;
+}
+.selectedHover :hover
+{
+    color: darkorange !important;
+}
+
+.haClass
+{
+    margin: 0 !important;
+}
+.kirishJSButton
+{
+    margin-top: -30% !important;
+    margin-left: 10% !important;
+    background-color: orange !important;
+}
+.allTypeOfMathGroup
+{
+    width: 100% !important;
+}
+.userTime
+{
+    margin-left: 20% !important;
+    margin-top: -10% !important;
+    width: 31% !important;
+}
+.userTime select
+{
+    background-color: orange;
+}
+.allTheme
+{
+    margin-left: 13%;
+    margin-top: 20% !important;
+}
+.allCounterNumberOfTest
+{
+    margin-top: 20% !important;
+}
+
+/* media section start */
+@media only screen and (max-width: 766px) {
+.firtSectionImagLogo1
+{
+    width: 100% !important;
+    margin-left: 9% !important;
+    margin-top: 40% !important;
+}
+.allTheme
+{
+    margin-left: 0% !important;
+}
+.firtSectionImagLogo
+{
+    height: 50vh;
+}
+    .userTime
+    {
+        margin-left: 0% !important;
+        width: 100% !important;
+    }
+    .kirishJSButton
+    {
+        margin-left: 35% !important;
+        margin-top: 0% !important;
+    }
+  }
