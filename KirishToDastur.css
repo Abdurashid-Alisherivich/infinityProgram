@@ -10,6 +10,11 @@
     height: 100vh;
     background-color: orange;
 }
+
+.buttonThemeNameMRTop
+{
+    margin-top: -50% !important;
+}
 .firtSectionImagLogo1
 {
     margin-left: 10%;
@@ -65,8 +70,8 @@
 }
 .userTime
 {
-    margin-left: 20% !important;
-    margin-top: -10% !important;
+    margin-left: 13% !important;
+    margin-top: -60% !important;
     width: 31% !important;
 }
 .userTime select
@@ -88,12 +93,13 @@
 .firtSectionImagLogo1
 {
     width: 100% !important;
-    margin-left: 9% !important;
+    margin-left: 6% !important;
     margin-top: 40% !important;
 }
 .allTheme
 {
     margin-left: 0% !important;
+    margin-top: -30% !important;
 }
 .firtSectionImagLogo
 {
@@ -101,12 +107,21 @@
 }
     .userTime
     {
+        margin-top: -135% !important;
         margin-left: 0% !important;
         width: 100% !important;
     }
     .kirishJSButton
     {
         margin-left: 35% !important;
-        margin-top: 0% !important;
+        margin-top: -60% !important;
+    }
+    .buttonThemeNameMRTop
+    {
+        margin-top: -140% !important;
+    }
+    .allCounterNumberOfTest
+    {
+        margin-top: -85% !important;
     }
   }

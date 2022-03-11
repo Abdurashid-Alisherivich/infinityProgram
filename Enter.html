@@ -1,111 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, user-scalable=no" />
-    <title>Infinity Foundation JS Test</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  </head>
-  <body>
-    <div class="wrapper">
-      <nav class="navbar bg-warning">
-        <span><img class="logoInfinityEnter" src="./images/logoInfinity.png" alt="Bu yerda rasm bor!"></span>
-        <span> <h1 class="thameOfMath">Infinity</h1> </span>
-        <div class="themeOfMathType" id="themeOfEnterHTML">Test</div>
-      </nav>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <title>Infinity Foundation JS Test</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <nav class="navbar navbar-light bg-warning">
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-6">
-            <textarea
-              unselectable="on"
-              onselectstart="return false;"
-              onmousedown="return false;"
-              id="display"
-              style="color: white; border: none"
-              readonly
-            >
+        <a class="navbar-brand" href="#">
+          <img src="./images/logoInfinity.png" alt="Bu yerda rasm bor!" width="30" height="24" class="d-inline-block align-text-top">
+          Infinity
+        </a>
+        <div class="themeOfMathType" id="themeOfEnterHTML">Test</div>
+
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <textarea unselectable="on" onselectstart="return false;" onmousedown="return false;" id="display"
+            style="color: white; border: none;" readonly>
             </textarea>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 secondDiv">
+          <div id="deadlinetime" style="right: 40%; font-size: 2rem">
+            Time
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-6 secondDiv">
-            <div id="deadlinetime" style="right: 40%; font-size: 2rem">
-              Time
+
+          <div class="wrapperBasicAction">
+            <input class="form-control mathResult" id="ress" type="number" placeholder="Natijani kiriting" />
+
+            <button style="opacity: 0.3" disabled id="button" onclick="checkRess()" type="submit"
+              class="btn btn-warning">
+              Submit
+            </button>
+
+            <button class="btn btn-warning firstButton" id="startButton" onclick="start()">
+              Start
+            </button>
+
+            <div class="trueAndFalseResult">
+              <ul>
+                <li>
+                  <p id="right" class="rigth">Correct: 0</p>
+                </li>
+                <li>
+                  <p id="wrong">Incorrect: 0</p>
+                </li>
+              </ul>
             </div>
-
-            <div class="wrapperBasicAction">
-              <input
-                class="form-control mathResult"
-                id="ress"
-                type="number"
-                placeholder="Natijani kiriting"
-              />
-
-              <button
-                style="opacity: 0.3"
-                disabled
-                id="button"
-                onclick="checkRess()"
-                type="submit"
-                class="btn btn-warning"
-              >
-                Submit
-              </button>
-
-              <button
-                class="btn btn-warning firstButton"
-                id="startButton"
-                onclick="start()"
-              >
-                Start
-              </button>
-
-              <div class="trueAndFalseResult">
-                <ul>
-                  <li>
-                    <p id="right" class="rigth">Correct: 0</p>
-                  </li>
-                  <li>
-                    <p id="wrong">Incorrect: 0</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-
           </div>
+
+
         </div>
       </div>
-
-      <footer class="footer">
-        <div class="footerSocialMedia">
-          <ul>
-            <li>
-              <a href="https://t.me/InfinityFergana">Telegram</a>
-            </li>
-            <li>
-              <a href="https://Instagram.com/infinityfergana">Instagram</a>
-            </li>
-            <li>
-              <a href="https://facebook.com/infinityfergana">Facebook</a>
-            </li>
-          </ul>
-        </div>
-      </footer>
     </div>
 
-    <script src="./index.js"></script>
-  </body>
+    <footer class="footer">
+      <div class="footerSocialMedia">
+        <ul>
+          <li>
+            <a href="https://t.me/InfinityFergana">Telegram</a>
+          </li>
+          <li>
+            <a href="https://Instagram.com/infinityfergana">Instagram</a>
+          </li>
+          <li>
+            <a href="https://facebook.com/infinityfergana">Facebook</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
 </html>
