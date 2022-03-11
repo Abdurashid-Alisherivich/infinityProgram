@@ -481,13 +481,13 @@ for (let i = 0; i < 1; i++) {
     while (doneTask.includes(tempObj.id * 1)) {
       tempObj = myObject[sum[myFunction(sum)]];
     }
-    return tempObj;
+    return tempObj * 1;
   }
   let currentResult = 0;
   function renewTask() {
     if (doneTask.length !== localStorage.getItem("numberOfTasks") * 1) {
       let myobj = generateRandomTask();
-      currentResult = myobj.result;
+      currentResult = myobj.result * 1;
       display(myobj);
       doneTask.push(myobj.id);
     } else {
