@@ -478,10 +478,10 @@ for (let i = 0; i < 1; i++) {
 
   function generateRandomTask() {
     let tempObj = myObject[sum[myFunction(sum)]];
-    while (doneTask.includes(tempObj.id * 1)) {
+    while (doneTask.includes((tempObj * 1).id)) {
       tempObj = myObject[sum[myFunction(sum)]];
     }
-    return tempObj * 1;
+    return tempObj;
   }
   let currentResult = 0;
   function renewTask() {
